@@ -51,7 +51,7 @@ export default {
         link: this.link
       });
 
-      this.renderModal = false;
+      this.closeModal();
     }
   }
 };

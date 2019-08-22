@@ -2,7 +2,7 @@
   <a class="resource" :href="resource.link" target="_blank" rel="noopener">
     <h2>{{ resource.name }}</h2>
     <p>{{ resource.description }}</p>
-    <p>{{ resource.link }}</p>
+    <p class="link">{{ resource.link }}</p>
   </a>
 </template>
 
@@ -21,7 +21,6 @@ export default {
 .resource {
   display: flex;
   flex-direction: column;
-  // height: 100%;
   padding: 16px;
   border-radius: 4px;
   background-color: white;
@@ -35,9 +34,13 @@ export default {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 
-  h2,
-  p {
+  h2 {
     margin: 0;
+  }
+
+  .link {
+    color: #676767;
+    margin-bottom: 0;
   }
 }
 </style>
